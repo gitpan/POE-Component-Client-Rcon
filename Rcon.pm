@@ -3,7 +3,7 @@ package POE::Component::Client::Rcon;
 use strict;
 
 use vars qw($VERSION $playerSN);
-$VERSION = '0.21';
+$VERSION = '0.22';
 $playerSN = 0;
 
 use Carp qw(croak);
@@ -96,6 +96,12 @@ sub rcon {
 		try		=> 1,	# number of tries...
 	};
 	return undef;
+}
+
+sub got_error {
+	my ($operation, $errnum, $errstr, $wheel_id, $heap) = @_[ARG0..ARG3,HEAP];
+	warn "Wheel $wheel_id generated $operation error $errnum: $errstr\n";
+	delete $heap->{w_jobs}->{$wheel_id}; # shut down that wheel
 }
 
 sub got_socket {
