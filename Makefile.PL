@@ -6,7 +6,7 @@ WriteMakefile(
     NAME		=> 'POE::Component::Client::Rcon',
     ( ($^O eq 'MacOS')
       ? ()
-      : ( AUTHOR	=> 'Andrew Chen <achen-poe-rcon@micropixel.com>',
+      : ( AUTHOR	=> 'Andrew Chen <achen-poe-rcon@divo.net>',
           ABSTRACT	=> 'POE-based implementation of the Rcon protocol.',
 	)
     ),

@@ -2,4 +2,5 @@ Rcon.pm
 README
 Makefile.PL
 test.pl
+sample.pl
 MANIFEST

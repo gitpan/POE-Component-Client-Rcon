@@ -3,7 +3,7 @@ package POE::Component::Client::Rcon;
 use strict;
 
 use vars qw($VERSION $playerSN);
-$VERSION = '0.22';
+$VERSION = '0.23';
 $playerSN = 0;
 
 use Carp qw(croak);
@@ -398,7 +398,7 @@ PoCo::Client::Rcon C<new> can take a few parameters:
 
 =item Alias => $alias_name
 
-C<Alias> sets the name of the Rcon components with which you will post events to.  By
+C<Alias> sets the name of the Rcon component to which you will post events to.  By
 default, this is 'rcon'.
 
 =item Timeout => $timeout_in_seconds
@@ -536,11 +536,12 @@ Wow.. words can't explain how much help he has been.
 
 =item Divo Networks
 
-Thanks for loaning me servers to test against.
+Thanks for loaning me servers to test against.  They rent game servers
+and can be found at http://www.divo.net/ .
 
 =head1 AUTHOR & COPYRIGHTS
 
-POE::Component::Client::Rcon is Copyright 2001-2002 by Andrew A. Chen <achen-poe-rcon@micropixel.com>
+POE::Component::Client::Rcon is Copyright 2001-2003 by Andrew A. Chen <achen-poe-rcon@divo.net>
 All rights are reserved.  POE::Component::Client::Rcon is free software; you 
 may redistribute it and/or modify it under the same terms as Perl itself.
 

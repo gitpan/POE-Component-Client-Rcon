@@ -9,6 +9,9 @@ and Quake.  RTCW is supposed to be compatible with Quake, but
 I have not been able to test this.
 
 --HISTORY--
+This is version 0.23.  Fixed a tiny bit of documentation and
+included a sample program.
+
 This is version 0.22.  I forgot to include a got_error() function
 to deal with errors.  Oops.
 
@@ -17,4 +20,4 @@ of internally handing out jobids to player queries.  Various
 little bugs were also fixed.
 
 Andrew A. Chen
-achen-poe-rcon@micropixel.com
+achen-poe-rcon@divo.net
